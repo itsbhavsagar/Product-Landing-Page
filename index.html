@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Free Code Camp: Product Landing Page</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <header id="header">
+ <nav class="navbar--top uk-navbar-container uk-visible@s" 
+      style="z-index: 980;" 
+      uk-sticky="show-on-up: true; 
+      animation: uk-animation-slide-top; 
+      bottom: #bottom" id="nav-bar" uk-navbar>
+      
+  <div class="uk-navbar-left uk-margin-large-left">
+   <ul class="uk-navbar-nav">
+    <img src="https://res.cloudinary.com/da8t1tjca/image/upload/v1496927348/hipsterlogogenerator_1496927310059_xqdjbj.png" alt="Logo image" class="logo" id="header-img" />
+   </ul>
+  </div>
+
+  <div class="uk-navbar-right uk-margin-large-right">
+   <ul class="uk-navbar-nav">
+    <li><a class="nav-link" href="#section-video" uk-scroll>Link 1</a></li>
+    <li><a class="nav-link" href="#section-cards" uk-scroll>Link 2</a></li>
+    <li><a class="nav-link" href="#section-email" uk-scroll>Link 3</a></li>
+   </ul>
+  </div>
+ </nav>
+
+ <div class="uk-position-relative uk-hidden@s">
+  <nav class="navbar--mobile uk-navbar-container" style="z-index: 980;" 
+      uk-sticky="show-on-up: true; 
+      animation: uk-animation-slide-top; 
+      bottom: #bottom" 
+      uk-navbar="dropbar: true; dropbar-mode: push; mode: click">
+   <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+     <li>
+      <a class="uk-navbar-toggle" href="#modal-full" uk-toggle>
+       <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+ </div>
+
+ <div id="modal-full" class="uk-modal-full" uk-modal>
+  <div class="uk-modal-dialog navigation__dialog">
+   <button class="uk-modal-close-full" type="button" uk-close></button>
+   <div class="uk-flex uk-flex-center uk-flex-middle nav__container">
+    <ul class="uk-nav-primary uk-nav-center uk-nav-parent-icon" uk-nav>
+     <li class="uk-nav-header">Menu</li>
+     <li class="uk-nav-divider"></li>
+     <li><a href="/">Home Page</a></li>
+     <li><a href="#section-video">Link 1</a></li>
+     <li><a href="#section-cards">Link 2</a></li>
+     <li><a href="#section-email">Link 3</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</header>
+
+<div class="uk-section uk-section-media uk-light uk-background-cover uk-section-xlarge" style="background-image: url(https://res.cloudinary.com/da8t1tjca/image/upload/v1496230915/cup-of-coffee-laptop-office-macbook-89786_wpxhwu.jpg)" uk-parallax="bgy: -250">
+ <div class="uk-container uk-text-center">
+  <h1 class="uk-heading-hero header__text">Product Launch</h1>
+  <button class="uk-button uk-button-primary uk-margin uk-button-large">See more</button>
+ </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-default" id="section-video">
+ <div class="uk-container">
+  <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+   <div class="video-description" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
+    <h1 class="uk-heading-bullet">Video Title</h1>
+    <p>Ut id nisl at lacus pede, a odio ac quam at magna. Donec fermentum nec, arcu. Suspendisse fermentum, enim diam.</p>
+    <p>Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Sed lacinia, urna dapibus sit amet ligula. Lorem ipsum erat, fringilla eget, dolor. In commodo est ultrices ut, consectetuer adipiscing gravida massa in faucibus justo. Suspendisse
+     facilisis in, augue. Fusce iaculis leo. Sed neque. Cras vitae turpis vulputate sagittis, metus.</p>
+   </div>
+   <div uk-scrollspy="cls: uk-animation-slide-right-small; repeat: true">
+    <div class="uk-cover-container uk-height-medium uk-box-shadow-large">
+     <video uk-cover autoplay loop muted id="video" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+    </video>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-primary uk-preserve-color" id="section-cards">
+ <div class="uk-container">
+  <div class="uk-grid-match uk-child-width-expand@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 500; repeat: true">
+   <div>
+    <div class="uk-card uk-card-default">
+     <div class="uk-card-media-top card-media--first uk-height-medium">
+      <div class="uk-card-badge uk-label">Price $</div>
+     </div>
+     <div class="uk-card-body">
+      <h3 class="uk-card-title">Option First</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="uk-card uk-card-default">
+     <div class="uk-card-media-top card-media--second uk-height-medium">
+      <div class="uk-card-badge uk-label">Price $</div>
+     </div>
+     <div class="uk-card-body">
+      <h3 class="uk-card-title">Option Second</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="uk-card uk-card-default">
+     <div class="uk-card-media-top card-media--third uk-height-medium">
+      <div class="uk-card-badge uk-label">Price $</div>
+     </div>
+     <div class="uk-card-body">
+      <h3 class="uk-card-title">Option Third</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-muted" id="section-email">
+ <div class="uk-container uk-container-small uk-text-center">
+  <h3>Stay in touch</h3>
+  <form class="uk-form-stacked" id="form" action="https://www.freecodecamp.com/email-submit">
+   <div class="uk-margin">
+    <div class="uk-form-controls">
+     <input class="uk-input" id="email" name="email" type="email" placeholder="Type your email" required />
+    </div>
+   </div>
+   <input type="submit" value="Submit" class="uk-button uk-button-secondary" id="submit" />
+  </form>
+ </div>
+</div>
+
+<footer class="footer">
+ <div class="uk-section uk-section-medium uk-section-secondary uk-light" id="links">
+  <div class="uk-container uk-container-small uk-text-center">
+   <a class="uk-margin" href="#" uk-totop uk-scroll></a><br>
+   <a href="https://github.com/bhavsagarchaudhary" class="uk-button uk-button-default uk-width-1-2 uk-width-1-3@s uk-margin-small-bottom" target="_blank">Github</a><br>
+   <a href="https://github.com/bhavsagarchaudhary" class="uk-button uk-button-default uk-width-1-2 uk-width-1-3@s uk-margin-small-bottom" target="_blank">My website</a>
+   <hr class="uk-divider-icon">
+   <p class="uk-text-small uk-text-muted">Copyright Bhavsagar 2020</p>
+  </div>
+ </div>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js'></script>
+<script src='https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

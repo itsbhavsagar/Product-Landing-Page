@@ -1,0 +1,58 @@
+.navbar--top, .navbar--mobile {
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1),
+              0 1px 3px rgba(12, 13, 14, 0.1), 
+              0 4px 20px rgba(12, 13, 14, 0.035), 
+              0 1px 1px rgba(12, 13, 14, 0.025);
+}
+
+.navigation__dialog {
+  height: 100%;
+}
+
+.nav__container {
+  height: 100%;
+}
+
+.uk-navbar-nav > li > a {
+  color: #333333;
+}
+
+.header-img{
+    width: 10px;
+}
+
+.header__text {
+  text-shadow: 0 0 10px #333;
+}
+
+.uk-card-media-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.card-media--first {
+  background: url("https://res.cloudinary.com/da8t1tjca/image/upload/v1496925842/pexels-photo-317356_wyfhtq.jpg");
+  background-size: cover;
+}
+
+.card-media--second {
+  background: url("https://res.cloudinary.com/da8t1tjca/image/upload/v1496925849/pexels-photo-39916_qsldjq.jpg");
+  background-size: cover;
+}
+
+.card-media--third {
+  background: url("https://res.cloudinary.com/da8t1tjca/image/upload/v1496925856/pexels-photo_1_pxitba.jpg");
+  background-size: cover;
+}
+
+.logo {
+  max-height: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .video-description {
+    text-align: center;
+  }
+}
